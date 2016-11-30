@@ -1,0 +1,92 @@
+[
+  X{
+    "uuid": "4912e088-547e-4f35-a695-2fdf7d490132", "caUuid": "bd9a8c76-6eb4-41b8-a02e-cc3f16793119", "name": "All Observations", "type": "PatrolObservationQuery", "typeKey": "patrolobservation", "id": "000008", "isShared": null,
+    "isCcaa": false,
+    "conservationArea": "SMART"
+  },
+  X{
+    "uuid": "4c4facd2-50bc-4533-8b30-26dc84828e61", "caUuid": "8f7fbe1b-201a-4ef4-bda8-14f5581e65ce", "name": "Elephant carcasses - observations", "type": "PatrolObservationQuery", "typeKey": "patrolobservation", "id": "000007", "isShared": null,
+    "isCcaa": false,
+    "conservationArea": "SMART"
+  },
+  X{
+    "uuid": "a836dc2c-f3f5-41e9-9e5f-7ef7b39c862b", "caUuid": "8f7fbe1b-201a-4ef4-bda8-14f5581e65ce", "name": "Human Activity", "type": "PatrolGriddedQuery", "typeKey": "patrolgrid", "id": "000017", "isShared": null,
+    "isCcaa": false,
+    "conservationArea": "SMART"
+  },
+  X{
+    "uuid": "56932245-9246-497d-b496-139633ce1b12", "caUuid": "8f7fbe1b-201a-4ef4-bda8-14f5581e65ce", "name": "Illegal logging observations", "type": "PatrolObservationQuery", "typeKey": "patrolobservation", "id": "000009", "isShared": null,
+    "isCcaa": false,
+    "conservationArea": "SMART"
+  },
+  X{
+    "uuid": "d20a38f4-ed81-41c8-8569-864740a5ab26", "caUuid": "8f7fbe1b-201a-4ef4-bda8-14f5581e65ce", "name": "Observations of hunting camps", "type": "PatrolObservationQuery", "typeKey": "patrolobservation", "id": "000010", "isShared": null,
+    "isCcaa": false,
+    "conservationArea": "SMART"
+  },
+  X{
+    "uuid": "e34a6be8-0ada-453b-9fcb-a370c90a7e31", "caUuid": "8f7fbe1b-201a-4ef4-bda8-14f5581e65ce", "name": "Patrol coverage - km", "type": "PatrolGriddedQuery", "typeKey": "patrolgrid", "id": "000011", "isShared": null,
+    "isCcaa": false,
+    "conservationArea": "SMART"
+  },
+  X{
+    "uuid": "429ca0fc-3264-4298-bbdf-e6b873e8d1bb", "caUuid": "8f7fbe1b-201a-4ef4-bda8-14f5581e65ce", "name": "Patrol effort by Patrol ID", "type": "PatrolSummaryQuery", "typeKey": "patrolsummary", "id": "000012", "isShared": null,
+    "isCcaa": false,
+    "conservationArea": "SMART"
+  },
+  X{
+    "uuid": "6289194b-da93-482f-95f3-0e5d3f239a1b", "caUuid": "8f7fbe1b-201a-4ef4-bda8-14f5581e65ce", "name": "Patrol effort by ranger", "type": "PatrolSummaryQuery", "typeKey": "patrolsummary", "id": "000013", "isShared": null,
+    "isCcaa": false,
+    "conservationArea": "SMART"
+  },
+  X{
+    "uuid": "6251fb6a-29d0-4d13-b2be-a63e15a3db57", "caUuid": "8f7fbe1b-201a-4ef4-bda8-14f5581e65ce", "name": "Patrol effort by transport type", "type": "PatrolSummaryQuery", "typeKey": "patrolsummary", "id": "000014", "isShared": null,
+    "isCcaa": false,
+    "conservationArea": "SMART"
+  },
+  X{
+    "uuid": "6f2c8df0-40d6-427c-9e1b-646fa85cee9a", "caUuid": "bd9a8c76-6eb4-41b8-a02e-cc3f16793119", "name": "Patrol Observation Query", "type": "PatrolObservationQuery", "typeKey": "patrolobservation", "id": "000005", "isShared": null,
+    "isCcaa": false,
+    "conservationArea": "SMART"
+  },
+  {
+    "uuid": "b5858ed0-a8f6-4a11-9eb2-306c6c1c7e2f", "caUuid": "8f7fbe1b-201a-4ef4-bda8-14f5581e65ce", "name": "Patrols with arrests", "type": "PatrolQuery", "typeKey": "patrolquery", "id": "000008", "isShared": null,
+    "isCcaa": false,
+    "conservationArea": "SMART"
+  },
+X  {
+    "uuid": "ab571879-0631-48b3-9ce4-e9ca0eacee44", "caUuid": "bd9a8c76-6eb4-41b8-a02e-cc3f16793119", "name": "People Direct Observation", "type": "ObsObservationQuery", "typeKey": "observationobservation", "id": "000006", "isShared": null,
+    "isCcaa": false,
+    "conservationArea": "SMART"
+  },
+  {
+    "uuid": "74b42d17-dc3a-47c0-acb9-e9627cd3fa3c", "caUuid": "bd9a8c76-6eb4-41b8-a02e-cc3f16793119", "name": "Poacher Encounters", "type": "PatrolQuery", "typeKey": "patrolquery", "id": "000004", "isShared": null,
+    "isCcaa": false,
+    "conservationArea": "SMART"
+  },
+  {
+    "uuid": "5f9458ea-53d3-4e1f-a66d-e2da8632461b", "caUuid": "8f7fbe1b-201a-4ef4-bda8-14f5581e65ce", "name": "Snare observations", "type": "PatrolObservationQuery", "typeKey": "patrolobservation", "id": "000015", "isShared": null,
+    "isCcaa": false,
+    "conservationArea": "SMART"
+  },
+  {
+    "uuid": "198844a8-0b6f-4b5c-b3aa-14386cd8d8b7", "caUuid": "8f7fbe1b-201a-4ef4-bda8-14f5581e65ce", "name": "Trophies seized", "type": "PatrolSummaryQuery", "typeKey": "patrolsummary", "id": "000016", "isShared": null,
+    "isCcaa": false,
+    "conservationArea": "SMART"
+  },
+X  {
+    "uuid": "2e7a7d85-1e83-4894-b996-1b55a68e7ba9", "caUuid": "bd9a8c76-6eb4-41b8-a02e-cc3f16793119", "name": "Weapons and Gear Seized ", "type": "ObsObservationQuery", "typeKey": "observationobservation", "id": "000002", "isShared": null,
+    "isCcaa": false,
+    "conservationArea": "SMART"
+  },
+X  {
+    "uuid": "139840bd-065f-4b54-8dca-ad79a5b02a69", "caUuid": "bd9a8c76-6eb4-41b8-a02e-cc3f16793119", "name": "Weapons and gear seized Incidents", "type": "ObservationWaypointQuery", "typeKey": "observationwaypoint", "id": "000003", "isShared": null,
+    "isCcaa": false,
+    "conservationArea": "SMART"
+  },
+X  {
+    "uuid": "611a242e-4b38-4c5f-bab6-d292b55f2229", "caUuid": "bd9a8c76-6eb4-41b8-a02e-cc3f16793119", "name": "Wildlife", "type": "ObsObservationQuery", "typeKey": "observationobservation", "id": "000007", "isShared": null,
+    "isCcaa": false,
+    "conservationArea": "SMART"
+  }
+]

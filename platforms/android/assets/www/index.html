@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html lang="en">
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google-signin-client_id" content="622004804596-5tnrstv0h8626emghv6ca9jgbqlep8cb.apps.googleusercontent.com">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+        <title>Wildlife Conservation Society</title>
+    </head>
+    <body>
+        <div class="container">
+          <div class="header clearfix">
+            <nav>
+              <ul class="nav nav-pills pull-right">
+                <!-- <li role="presentation"><a href="#"> <div class="g-signin2" data-onsuccess="onSignIn">Sign In?</div></a></li> -->
+              </ul>
+            </nav>
+            <img id="logo" src="img/logo.svg"/><h3 id="header" class="text-muted">WCS Analytics</h3>
+          </div>
+           <div class="row">
+            <div class='col-lg-12'>
+              <p>Select types of encounters and observations and a way to group and highlight the data into graphs and maps to help analyze what has been captured into the SMART Connect system.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class='col-lg-12'>
+                <form>
+                  <div class="form-group">
+                    <label for="dataType">Data Type</label>
+                    <select id="dataType" class="form-control">
+                      <option>Weapons</option>
+                      <option>All Obversations</option>
+                      <option>Wildlife</option>
+                      <option>People</option>
+                      <option>Hunting Camps</option>
+                      <option>Elephants</option>
+                      <option>Logging</option>
+                      <option>Incidents</option>
+                    </select>
+                  </div>
+                  <div class="form-group data-aspect observationaspect" style="display:none;">
+                    <label for="observationsSelect">How To Display</label>
+                    <select id="observationsSelect" class="form-control">
+                        <option>By Categories</option>
+                    </select>
+
+                  </div>
+                  <div class="form-group data-aspect weaponsaspect" >
+                    <label for="weaponsSelect">How To Display</label>
+                    <select id="weaponsSelect" class="form-control">
+                        <option>Seizures by Time</option>
+                        <option>Type of Firearm</option>
+                    </select>
+
+                  </div>
+                  <div class="form-group data-aspect wildlifeaspect" style="display:none;">
+                    <label for="wildlifeSelect">How To Display</label>
+                    <select id="wildlifeSelect" class="form-control">
+                        <option>Wildlife</option>
+                    </select>
+                  </div>
+                  <div class="form-group data-aspect peopleaspect" style="display:none;">
+                    <label for="peopleSelect">How To Display</label>
+                    <select id="peopleSelect" class="form-control">
+                        <option>By Threat</option>
+                    </select>
+                  </div>
+                  <div class="form-group data-aspect hunteraspect" style="display:none;">
+                    <label for="huntingSelect">How To Display</label>
+                    <select id="huntingSelect" class="form-control">
+                        <option>Hunting Thing</option>
+                    </select>
+                  </div>
+                  <div class="form-group data-aspect elephantaspect" style="display:none;">
+                    <label for="elephantSelect">How To Display</label>
+                    <select id="elephantSelect" class="form-control">
+                        <option>Age of Animal</option>
+                        <option>Mandate</option>
+                    </select>
+                  </div>
+                 <div class="form-group data-aspect incidentsaspect" style="display:none;">
+                    <label for="incidentsSelect">How To Display</label>
+                    <select id="incidentsSelect" class="form-control">
+                        <option>Waypoint Date</option>                    	
+                        <option>Weapons</option>
+                        <option>Threat</option>
+                    </select>
+                  </div>
+                  <div class="form-group data-aspect loggingaspect" style="display:none;">
+                    <label for="loggingSelect">How To Display</label>
+                    <select id="loggingSelect" class="form-control">
+                        <option>Logging Graph</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <div class="seizures">
+                      <label for="startTime">Start Time</label>
+                       <input id="startTime" type="text" class="form-control datepicker" value="09/09/2000"></input>
+                       <label for="endTime">End Time</label>
+                       <input id="endTime" type="text" value="09/09/2016" class="form-control datepicker"/></input>
+                    </div>
+                  </div>
+                  <button id="submit-form" type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+            
+          </div>
+      <div id="graph_section" class="row">
+        <div class="col-lg-12">
+            <h3>Graph</h3>
+            <div id="canvas-holder">
+              <canvas id="chart_1" width="400" height="400"></canvas>
+            </div>
+        </div>
+      </div>
+
+      <div id="map_section" class="row">
+        <div class="col-lg-12">
+            <h3>Map</h3>
+            <div id="map">
+
+            </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>©Table 26, AWS Hackathon 2016</p>
+      </footer>
+
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="js/underscore.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <!-- Allow links to example.com -->
+    <allow-navigation href="https://maps.googleapis.com/*" />
+    <allow-navigation href="https://unpkg.com/*" />
+    <allow-navigation href="https://apis.google.com/*" />
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4ywdrT3iDBmjO6a51L4sDW3ALZ9Zg7qY"></script>
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script type="text/javascript" src="js/shp.min.js"></script>
+    <script type="text/javascript" src="js/wcs_charts.js">        
+    </script>
+
+   
+    <script type="text/javascript" src="js/wcs_google_auth.js">        
+    </script>
+
+    <!-- Google auth integrations -->
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+
+    <!-- AWS integration for analytics -->
+    <script src="js/aws-sdk.js"></script>
+    <script type="text/javascript" src="js/aws-sdk-mobile-analytics.js"></script>
+     
+     <style>
+      #map { height: 500px; }
+     </style>
+    <script type="text/javascript">
+        var storage = window.localStorage;
+        var map= null;
+        map = L.map('map').setView([51.505, -0.09], 3);
+        $(document).ready(function(){
+            $('input.datepicker').datepicker({}); 
+            AWS.config.region = 'us-east-1';
+            AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+                IdentityPoolId: 'us-east-1:83a39ccc-d1d8-4415-bd5a-79110734efbf'
+            });
+            var options = {
+                appId : '000eba0243b94852bb43d0cbd2f3c05c'
+            };
+            mobileAnalyticsClient = new AMA.Manager(options);
+
+            weaponsGraph();
+            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+              attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+          }).addTo(map);
+        }); 
+
+    </script>
+    </body>
+</html>
