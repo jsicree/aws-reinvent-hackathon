@@ -10,7 +10,7 @@ Satoshi Yoshida
 Pyounguk Cho  
 
 ### Screenshots
-![Weapons Screenshot](https://www.github.com/jsicree/aws-reinvent-hackathon/screenshot_weapons.png)
+![Weapons Screenshot](https://www.github.com/jsicree/aws-reinvent-hackathon/blob/master/screenshot_weapons.png)
 
 
 
