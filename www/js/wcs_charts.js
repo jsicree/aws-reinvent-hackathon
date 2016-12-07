@@ -732,8 +732,8 @@ function logging(){
       clear_canvas();
       _.forEach(data.items,function(item){
           var marker = L.marker([
-              parseFloat(item['X']),
-              parseFloat(item['Y'])]).addTo(map);
+              parseFloat(item['Y']),
+              parseFloat(item['X'])]).addTo(map);
           marker.bindPopup('Type:'+item['Type']+'<br/>'+
               'Mandate:'+item['Mandate']+'<br/>'+
               'Waypoint Date'+item['Waypoint Date']+'<br/>'+
@@ -790,8 +790,8 @@ function incidentsByWeaponCount(){
         if(chart){clear_canvas();}
         _.forEach(data.items,function(item){
             var marker = L.marker([
-                parseFloat(item['X']),
-                parseFloat(item['Y'])]).addTo(map);
+                parseFloat(item['Y']),
+                parseFloat(item['X'])]).addTo(map);
             marker.bindPopup('Source: '+item['Source']+'<br/>'+
                 'Waypoint ID: '+item['Waypoint ID']+'<br/>'+
                 'Waypoint Date: '+item['Waypoint Date']+'<br/>'+
@@ -853,8 +853,8 @@ function incidentsByWaypointDate(){
         var marker_locations = [];
         _.forEach(data.items,function(item){
             var marker = L.marker([
-                parseFloat(item['X']),
-                parseFloat(item['Y'])]).addTo(map);
+                parseFloat(item['Y']),
+                parseFloat(item['X'])]).addTo(map);
             marker.bindPopup('Source: '+item['Source']+'<br/>'+
                 'Waypoint ID: '+item['Waypoint ID']+'<br/>'+
                 'Waypoint Date: '+item['Waypoint Date']+'<br/>'+
@@ -914,8 +914,8 @@ function incidentsByThreat(){
         if(chart){clear_canvas();}
         _.forEach(data.items,function(item){
             var marker = L.marker([
-                parseFloat(item['X']),
-                parseFloat(item['Y'])]).addTo(map);
+                parseFloat(item['Y']),
+                parseFloat(item['X'])]).addTo(map);
             marker.bindPopup('Source: '+item['Source']+'<br/>'+
                 'Waypoint ID: '+item['Waypoint ID']+'<br/>'+
                 'Waypoint Date: '+item['Waypoint Date']+'<br/>'+
