@@ -6,7 +6,7 @@ Contributors:
 Justin Raines (https://github.com/dvito)  
 Joe Sicree (https://github.com/jsicree)  
 Andreas Mueller  
-Satoshi Yoshida  
+Satoshi Yoshida  (https://github.com/yoshidasts)  
 Pyounguk Cho  
 
 ### Screenshots
